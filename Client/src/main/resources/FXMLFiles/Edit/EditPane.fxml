@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="856.0" style="-fx-background-color: #393B45;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.edit.EditFXMLController">
+   <children>
+      <TextField fx:id="nameTextField" layoutX="356.0" layoutY="216.0" prefHeight="25.0" prefWidth="154.0" />
+      <TextField fx:id="lastNameTextField" layoutX="356.0" layoutY="265.0" prefHeight="25.0" prefWidth="154.0" />
+      <Text fill="WHITE" layoutX="315.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" wrappingWidth="37.7366943359375" />
+      <Text fill="WHITE" layoutX="294.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LastName :" />
+      <Button fx:id="submitButton" layoutX="406.0" layoutY="377.0" mnemonicParsing="false" onAction="#submitInfo" style="-fx-background-color: #6E7889;" text="Submit" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="62.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :" />
+      <Text fill="WHITE" layoutX="21.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repeat password :" />
+      <Text fill="WHITE" layoutX="537.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of birth :" />
+      <Text fill="WHITE" layoutX="532.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email address :" />
+      <Text fill="WHITE" layoutX="526.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number :" />
+      <Text fill="WHITE" layoutX="330.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bio :" />
+      <DatePicker fx:id="datePicker" layoutX="614.0" layoutY="216.0" prefHeight="25.0" prefWidth="154.0" />
+      <TextField fx:id="bioTextField" layoutX="356.0" layoutY="317.0" prefHeight="25.0" prefWidth="154.0" />
+      <TextField fx:id="phoneTextField" layoutX="614.0" layoutY="266.0" prefHeight="25.0" prefWidth="154.0" />
+      <TextField fx:id="emailTextField" layoutX="614.0" layoutY="317.0" prefHeight="25.0" prefWidth="154.0" />
+      <CheckBox fx:id="dateVisibleCheck" layoutX="779.0" layoutY="221.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="57.0" text="Visible" textFill="#6d6c6c" />
+      <CheckBox fx:id="emailVisibleCheck" layoutX="779.0" layoutY="325.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="57.0" text="Visible" textFill="#6d6c6c" />
+      <CheckBox fx:id="phoneVisibleCheck" layoutX="779.0" layoutY="270.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="57.0" text="Visible" textFill="#6d6c6c" />
+      <TextField fx:id="usernameTextField" layoutX="121.0" layoutY="217.0" prefHeight="25.0" prefWidth="154.0" />
+      <Text fill="WHITE" layoutX="58.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" />
+      <ImageView fx:id="profileImageView" fitHeight="154.0" fitWidth="154.0" layoutX="121.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <PasswordField fx:id="pass2PasswordField" layoutX="121.0" layoutY="317.0" prefHeight="25.0" prefWidth="154.0" />
+      <PasswordField fx:id="pass1PasswordField" layoutX="121.0" layoutY="265.0" prefHeight="25.0" prefWidth="154.0" />
+      <Text fx:id="passError" fill="#ee7272" layoutX="147.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passwords don't match" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="emailError" fill="#ee7272" layoutX="625.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email address is already taken" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="usernameError" fill="#ee7272" layoutX="140.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username is already taken" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <TextField fx:id="imagePath" layoutX="294.0" layoutY="79.0" prefHeight="25.0" prefWidth="154.0" />
+      <Text fill="WHITE" layoutX="295.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New profile picture:" />
+      <Button mnemonicParsing="false" onAction="#prevStep" prefHeight="31.0" prefWidth="37.0" style="-fx-background-color: #393b45;" text="&lt;" textFill="#006bb3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

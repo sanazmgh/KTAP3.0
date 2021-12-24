@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="856.0" style="-fx-background-color: #393b45;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.messenger.MessengerFXMLController">
+   <children>
+      <Pane fx:id="chatPane" layoutX="313.0" prefHeight="451.0" prefWidth="543.0" style="-fx-background-color: #2e3038;" />
+      <Pane fx:id="viewContactsPane" layoutX="4.0" layoutY="5.0" prefHeight="419.0" prefWidth="304.0" style="-fx-background-color: #393b45;">
+         <children>
+            <Pane layoutY="389.0" prefHeight="30.0" prefWidth="304.0" style="-fx-background-color: #2e3038;">
+               <children>
+                  <Button fx:id="backButton" layoutY="2.0" mnemonicParsing="false" onAction="#backPage" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: #2e3038;" text="Back" textFill="#676b7e" />
+                  <Button fx:id="nextButton" layoutX="252.0" layoutY="2.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: #2e3038;" text="Next" textFill="#676b7e" />
+               </children>
+            </Pane>
+            <Pane fx:id="chat6Pane" layoutY="213.0" prefHeight="30.0" prefWidth="304.0" style="-fx-background-color: #2e3038;" />
+            <Pane fx:id="chat5Pane" layoutY="179.0" prefHeight="30.0" prefWidth="304.0" style="-fx-background-color: #2e3038;" />
+            <Pane fx:id="chat4Pane" layoutY="145.0" prefHeight="30.0" prefWidth="304.0" style="-fx-background-color: #2e3038;" />
+            <Pane fx:id="chat3Pane" layoutY="111.0" prefHeight="30.0" prefWidth="304.0" style="-fx-background-color: #2e3038;" />
+            <Pane fx:id="chat2Pane" layoutY="77.0" prefHeight="30.0" prefWidth="304.0" style="-fx-background-color: #2e3038;" />
+            <Pane fx:id="chat1Pane" layoutY="43.0" prefHeight="30.0" prefWidth="304.0" style="-fx-background-color: #2e3038;" />
+            <Pane fx:id="chat7Pane" layoutY="247.0" prefHeight="30.0" prefWidth="304.0" style="-fx-background-color: #2e3038;" />
+            <Pane fx:id="chat8Pane" layoutY="281.0" prefHeight="30.0" prefWidth="304.0" style="-fx-background-color: #2e3038;" />
+            <Pane fx:id="chat9Pane" layoutY="315.0" prefHeight="30.0" prefWidth="304.0" style="-fx-background-color: #2e3038;" />
+            <Pane fx:id="chat10Pane" layoutY="349.0" prefHeight="30.0" prefWidth="304.0" style="-fx-background-color: #2e3038;" />
+            <Pane fx:id="chat0Pane" layoutY="9.0" prefHeight="30.0" prefWidth="304.0" style="-fx-background-color: #2e3038;" />
+         </children></Pane>
+      <Button layoutX="5.0" layoutY="424.0" mnemonicParsing="false" onAction="#lists" prefHeight="25.0" prefWidth="41.0" style="-fx-background-color: #393b45;" text="Lists" textFill="#006bb3" />
+      <Button layoutX="46.0" layoutY="424.0" mnemonicParsing="false" onAction="#compose" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: #393b45;" text="Compose" textFill="#006bb3" />
+      <Button layoutX="114.0" layoutY="424.0" mnemonicParsing="false" onAction="#newGroup" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #393b45;" text="New group" textFill="#006bb3" />
+   </children>
+</Pane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="chatPane" prefHeight="451.0" prefWidth="543.0" style="-fx-background-color: #2e3038;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.messenger.chat.ChatFXMLController">
+   <children>
+      <Button fx:id="nextButton" layoutX="516.0" layoutY="44.0" mnemonicParsing="false" onAction="#next" style="-fx-background-color: #2e3038;" text="/\" textFill="#006bb3" />
+      <Button fx:id="backButton" layoutX="516.0" layoutY="365.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #2e3038;" text="\\/" textFill="#006bb3" />
+      <TextField fx:id="messageTextField" layoutX="8.0" layoutY="390.0" prefHeight="25.0" prefWidth="474.0" promptText="Message" />
+      <Pane fx:id="message5Pane" layoutX="8.0" layoutY="48.0" prefHeight="62.0" prefWidth="474.0" style="-fx-background-color: #22242a;" />
+      <Pane prefHeight="44.0" prefWidth="543.0" style="-fx-background-color: #22242a;">
+         <children>
+            <TextField fx:id="addUserTextField" layoutX="357.0" layoutY="10.0" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #2e3038;" />
+            <Button fx:id="addButton" layoutX="464.0" layoutY="10.0" mnemonicParsing="false" onAction="#addMember" style="-fx-background-color: #22242a;" text="Add to chat" textFill="#006bb3" />
+            <Text fx:id="groupText" fill="#b9bbc6" layoutX="4.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group name">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="membersText" fill="#676b7e" layoutX="3.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="member1, member2, member3" wrappingWidth="276.5367546081543" />
+         </children>
+      </Pane>
+      <Button fx:id="submitButton" layoutX="484.0" layoutY="421.0" mnemonicParsing="false" onAction="#submitMessage" style="-fx-background-color: #2e3038;" text="Submit" textFill="#676b7e" />
+      <TextField fx:id="attachmentTextField" layoutX="8.0" layoutY="420.0" prefHeight="25.0" prefWidth="474.0" promptText="Attachment" />
+      <Pane fx:id="message4Pane" layoutX="8.0" layoutY="113.0" prefHeight="62.0" prefWidth="474.0" style="-fx-background-color: #22242a;" />
+      <Pane fx:id="message3Pane" layoutX="8.0" layoutY="178.0" prefHeight="62.0" prefWidth="474.0" style="-fx-background-color: #22242a;" />
+      <Pane fx:id="message2Pane" layoutX="8.0" layoutY="243.0" prefHeight="62.0" prefWidth="474.0" style="-fx-background-color: #22242a;" />
+      <Pane fx:id="message1Pane" layoutX="9.0" layoutY="309.0" prefHeight="62.0" prefWidth="474.0" style="-fx-background-color: #22242a;" />
+      <TextField fx:id="timeTextField" layoutX="486.0" layoutY="390.0" prefHeight="25.0" prefWidth="54.0" promptText="HH:MM" style="-fx-background-color: #2e3038; -fx-text-fill: #676b7e;">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>

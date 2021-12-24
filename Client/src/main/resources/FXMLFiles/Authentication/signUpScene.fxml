@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="883.0" style="-fx-background-color: #393B45;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.authentication.SignUpFXMLController">
+   <children>
+      <Button layoutX="365.0" layoutY="425.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #6E7889;" text="Login" textFill="WHITE" />
+      <TextField fx:id="nameTextField" layoutX="363.0" layoutY="182.0" prefHeight="25.0" prefWidth="154.0" />
+      <TextField fx:id="lastNameTextField" layoutX="363.0" layoutY="231.0" prefHeight="25.0" prefWidth="154.0" />
+      <Text fill="WHITE" layoutX="322.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" wrappingWidth="37.7366943359375" />
+      <Text fill="WHITE" layoutX="301.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LastName :" />
+      <Label layoutX="368.0" layoutY="14.0" text="KTAP" textFill="#6e7889">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="122.0" text="Sign up" textFill="#6e7889">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitButton" layoutX="415.0" layoutY="381.0" mnemonicParsing="false" onAction="#submitInfo" style="-fx-background-color: #6E7889;" text="Submit" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="55.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repeat password :" />
+      <Text fill="WHITE" layoutX="558.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of birth :" />
+      <Text fill="WHITE" layoutX="553.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email address :" />
+      <Text fill="WHITE" layoutX="547.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number :" />
+      <Text fill="WHITE" layoutX="337.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bio :" />
+      <TextField fx:id="password1TextField" layoutX="114.0" layoutY="231.0" prefHeight="25.0" prefWidth="154.0" />
+      <TextField fx:id="password2TextField" layoutX="114.0" layoutY="284.0" prefHeight="25.0" prefWidth="154.0" />
+      <DatePicker fx:id="datePicker" layoutX="635.0" layoutY="182.0" prefHeight="25.0" prefWidth="154.0" />
+      <TextField fx:id="bioTextField" layoutX="363.0" layoutY="283.0" prefHeight="25.0" prefWidth="154.0" />
+      <TextField fx:id="phoneTextField" layoutX="635.0" layoutY="231.0" prefHeight="25.0" prefWidth="154.0" />
+      <TextField fx:id="emailTextField" layoutX="635.0" layoutY="283.0" prefHeight="25.0" prefWidth="154.0" />
+      <CheckBox fx:id="dateVisibleCheck" layoutX="812.0" layoutY="187.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="57.0" text="Visible" textFill="#6d6c6c" />
+      <CheckBox fx:id="emailVisibleCheck" layoutX="812.0" layoutY="288.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="57.0" text="Visible" textFill="#6d6c6c" />
+      <CheckBox fx:id="phoneVisibleCheck" layoutX="812.0" layoutY="236.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="57.0" text="Visible" textFill="#6d6c6c" />
+      <Text fill="#ee7272" layoutX="275.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="#ee7272" layoutX="525.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="#ee7272" layoutX="798.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="#ee7272" layoutX="525.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="#ee7272" layoutX="275.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fx:id="passError" fill="#ee7272" layoutX="140.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passwords don't match" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="emailError" fill="#ee7272" layoutX="646.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email address is already taken" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <TextField fx:id="usernameTextField" layoutX="114.0" layoutY="183.0" prefHeight="25.0" prefWidth="154.0" />
+      <Text fill="#ee7272" layoutX="275.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="WHITE" layoutX="51.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" />
+      <Text fx:id="usernameError" fill="#ee7272" layoutX="133.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username is already taken" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="offlineText" fill="#ee7272" layoutX="403.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are offline" />
+      <Button fx:id="onlineButton" layoutX="849.0" layoutY="474.0" mnemonicParsing="false" onAction="#backOnline" prefHeight="25.0" prefWidth="23.0" style="-fx-background-color: #51856e;" />
+   </children>
+</Pane>

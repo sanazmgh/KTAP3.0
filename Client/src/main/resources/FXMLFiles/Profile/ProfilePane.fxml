@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="856.0" style="-fx-background-color: #393b45;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.profile.ProfileFXMLController">
+   <ImageView fx:id="profileImageView" fitHeight="110.0" fitWidth="110.0" layoutX="14.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+   <Label fx:id="nameLabel" layoutX="130.0" layoutY="27.0" text="name &amp; lastname" textFill="#b9bbc6">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="usernameLabel" layoutX="129.0" layoutY="57.0" text="\@username" textFill="#676b7e" />
+   <Label fx:id="bioLabel" layoutX="129.0" layoutY="92.0" text="bio" textFill="#9da0af">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="informationLabel" layoutX="129.0" layoutY="111.0" text="email address . phone number . date of birth" textFill="#676b7e">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Pane layoutX="15.0" layoutY="151.0" prefHeight="262.0" prefWidth="826.0" style="-fx-background-color: #2e3038;">
+      <Pane layoutY="233.0" prefHeight="30.0" prefWidth="826.0" style="-fx-background-color: #22242a;">
+         <Button fx:id="backButton" layoutY="2.0" mnemonicParsing="false" onAction="#backPage" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: #22242a;" text="Back" textFill="#676b7e" />
+         <Button fx:id="nextButton" layoutX="773.0" layoutY="2.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: #22242a;" text="Next" textFill="#676b7e" />
+         <Button fx:id="backInCommentsButton" layoutX="364.0" layoutY="3.0" mnemonicParsing="false" onAction="#closeComment" style="-fx-background-color: #22242a;" text="Close comment" textFill="#676b7e" />
+      </Pane>
+      <Line endX="686.4000244140625" layoutX="126.0" layoutY="78.0" startX="-113.00000762939453" stroke="#22242a" />
+      <Line endX="686.4000244140625" layoutX="126.0" layoutY="154.0" startX="-113.00000762939453" stroke="#22242a" />
+      <Pane fx:id="tweet1Pane" layoutX="14.0" layoutY="4.0" prefHeight="72.0" prefWidth="800.0" style="-fx-background-color: #2e3038;" />
+      <Pane fx:id="tweet2Pane" layoutX="14.0" layoutY="80.0" prefHeight="72.0" prefWidth="800.0" style="-fx-background-color: #2e3038;" />
+      <Pane fx:id="tweet3Pane" layoutX="14.0" layoutY="156.0" prefHeight="72.0" prefWidth="800.0" style="-fx-background-color: #2e3038;" />
+   </Pane>
+   <Pane fx:id="toolBarPane" layoutY="421.0" prefHeight="30.0" prefWidth="856.0" style="-fx-background-color: #22242a;">
+      <Button layoutY="2.0" mnemonicParsing="false" onAction="#newTweet" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #22242a;" text="New tweet" textFill="#006bb3" />
+      <Button layoutX="121.0" layoutY="2.0" mnemonicParsing="false" onAction="#lists" prefHeight="25.0" prefWidth="43.0" style="-fx-background-color: #22242a;" text="Lists" textFill="#006bb3" />
+      <Button layoutX="78.0" layoutY="2.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="43.0" style="-fx-background-color: #22242a;" text="Edit" textFill="#006bb3" />
+      <Button layoutX="164.0" layoutY="2.0" mnemonicParsing="false" onAction="#notifications" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #22242a;" text="Notifications" textFill="#006bb3" />
+   </Pane>
+   <Label fx:id="lastSeenLabel" layoutX="130.0" layoutY="74.0" text="Last seen recently" textFill="#676b7e" />
+   <Button fx:id="blockButton" layoutX="781.0" layoutY="4.0" mnemonicParsing="false" onAction="#block" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #393b45;" text="Block" textFill="#006bb3" />
+   <Button fx:id="muteButton" layoutX="718.0" layoutY="4.0" mnemonicParsing="false" onAction="#mute" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #393b45;" text="Mute" textFill="#006bb3" />
+   <Button fx:id="followButton" layoutX="633.0" layoutY="4.0" mnemonicParsing="false" onAction="#follow" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #393b45;" text="Follow" textFill="#006bb3" />
+   <Button fx:id="prevStepButton" mnemonicParsing="false" onAction="#prevStep" prefHeight="31.0" prefWidth="37.0" style="-fx-background-color: #393b45;" text="&lt;" textFill="#006bb3">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Label fx:id="privacyStatusLabel" layoutX="760.0" layoutY="133.0" text="Private account" textFill="#22242a" />
+   <Text fx:id="visibleErrorText" fill="#ee7272" layoutX="319.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="sorry, you don't have access to this users's tweets">
+      <font>
+         <Font size="10.0" />
+      </font>
+   </Text>
+</Pane>

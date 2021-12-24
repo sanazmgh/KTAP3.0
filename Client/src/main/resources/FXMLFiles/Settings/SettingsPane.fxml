@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="856.0" style="-fx-background-color: #393b45;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.settings.SettingsFXMLController">
+   <children>
+      <RadioButton fx:id="privateRadioButton" layoutX="100.0" layoutY="87.0" mnemonicParsing="false" onAction="#privacy" text="Private" textFill="#b9bbc6">
+         <toggleGroup>
+            <ToggleGroup fx:id="privacy" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="publicRadioButton" layoutX="31.0" layoutY="87.0" mnemonicParsing="false" onAction="#privacy" text="public" textFill="#b9bbc6" toggleGroup="$privacy" />
+      <RadioButton fx:id="nobodyRadioButton" layoutX="208.0" layoutY="171.0" mnemonicParsing="false" onAction="#lastSeen" text="Nobody" textFill="#b9bbc6">
+         <toggleGroup>
+            <ToggleGroup fx:id="lastSeen" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="everyoneRadioButton" layoutX="122.0" layoutY="171.0" mnemonicParsing="false" onAction="#lastSeen" text="Everyone" textFill="#b9bbc6" toggleGroup="$lastSeen" />
+      <RadioButton fx:id="followersRadioButton" layoutX="32.0" layoutY="171.0" mnemonicParsing="false" onAction="#lastSeen" text="Followers" textFill="#b9bbc6" toggleGroup="$lastSeen" />
+      <PasswordField fx:id="deletePasswordField" layoutX="94.0" layoutY="269.0" />
+      <PasswordField fx:id="deactivePasswordField" layoutX="94.0" layoutY="361.0" />
+      <Button fx:id="deleteButton" layoutX="245.0" layoutY="269.0" mnemonicParsing="false" onAction="#deleteAccount" style="-fx-background-color: #393b45;" text="Submit" textFill="#006bb3" />
+      <Text fill="#676b7e" layoutX="31.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Privacy">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#676b7e" layoutX="31.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last seen">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#676b7e" layoutX="33.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete account">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#676b7e" layoutX="31.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deactive account">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="26.0" layoutY="412.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: #393b45;" text="Log out" textFill="#006bb3" />
+      <Text fill="#b9bbc6" layoutX="31.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password : " />
+      <Text fill="#b9bbc6" layoutX="31.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password : " />
+      <Button fx:id="deactiveButton" layoutX="245.0" layoutY="361.0" mnemonicParsing="false" onAction="#deactiveAccount" style="-fx-background-color: #393b45;" text="Submit" textFill="#006bb3" />
+      <Text fx:id="wrongPassText" fill="#ee7272" layoutX="376.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wrong password" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="offline1Text" fill="#ee7272" layoutX="129.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are offline" />
+      <Text fx:id="offline2Text" fill="#ee7272" layoutX="129.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are offline" />
+   </children>
+</Pane>

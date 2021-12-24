@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="883.0" style="-fx-background-color: #2e3038;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.mainPage.MainPageFXMLController">
+   <children>
+      <Pane prefHeight="34.0" prefWidth="883.0" style="-fx-background-color: #22242a;">
+         <children>
+            <Button fx:id="messengerButton" layoutX="531.0" layoutY="4.0" mnemonicParsing="false" onAction="#viewMessenger" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: #505362;" text="Messenger" textFill="#b9bbc6" />
+            <Button fx:id="settingsButton" layoutX="707.0" layoutY="4.0" mnemonicParsing="false" onAction="#viewSettings" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: #505362;" text="Settings" textFill="#b9bbc6" />
+            <Button fx:id="explorerButton" layoutX="355.0" layoutY="4.0" mnemonicParsing="false" onAction="#viewExplorer" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: #505362;" text="Explorer" textFill="#b9bbc6" />
+            <Button fx:id="timelineButton" layoutX="179.0" layoutY="4.0" mnemonicParsing="false" onAction="#viewTimeline" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: #505362;" text="Timeline" textFill="#b9bbc6" />
+            <Button fx:id="profileButton" layoutX="3.0" layoutY="4.0" mnemonicParsing="false" onAction="#viewProfile" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: #505362;" text="Profile" textFill="#b9bbc6" />
+         </children>
+      </Pane>
+      <Pane fx:id="middlePane" layoutX="14.0" layoutY="45.0" prefHeight="451.0" prefWidth="856.0" style="-fx-background-color: #393b45;" />
+      <Button fx:id="onlineButton" layoutX="855.0" layoutY="4.0" mnemonicParsing="false" onAction="#backOnline" prefHeight="25.0" prefWidth="23.0" style="-fx-background-color: #51856e;" />
+   </children>
+</Pane>
